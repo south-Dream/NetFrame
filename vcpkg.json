@@ -1,0 +1,12 @@
+{
+    "name": "netframe",
+    "version-string": "0.1.0",
+    "builtin-baseline": "f74a2eade17a628413746557d04db25ccf6e76f9",
+    "dependencies": [
+        {
+            "name": "boost-asio",
+            "default-features": false
+        },
+        "protobuf"
+    ]
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "NetFrameClient.Protocol";
+
+message Pong
+{
+	uint32 sequence = 1;
+	uint32 clientSendTime = 2;
+	uint32 serverSendTime = 3;
+}

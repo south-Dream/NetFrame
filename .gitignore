@@ -67,3 +67,23 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+
+
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.sln
+
+# VS CMake user config
+CMakeUserPresets.json
+
+# Project local output
+out/
+
+# Protobuf auto-generated code (CMake/build script output)
+proto/generated/
+
+# Log directory
+logs/

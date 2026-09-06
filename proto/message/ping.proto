@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "NetFrameClient.Protocol";
+
+message Ping
+{
+	uint32 sequence = 1;
+	uint32 clientSendTime = 2;
+}
