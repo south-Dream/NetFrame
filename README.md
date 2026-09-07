@@ -560,8 +560,6 @@ generate_proto.bat "C:\path\to\Generated"
 * Ping / Pong 心跳和超时断开
 * 服务端退出后的连接关闭
 
-目前使用的 3 个 Worker、每个 Worker 10 条连接只是联调配置，用于方便验证连接分配和满载逻辑，不代表实际服务器承载能力。
-
 当前还没有进行完整的连接数、高频消息和长时间稳定性压力测试。
 
 另外，Handle 目前直接运行在 IO Worker 线程中，因此数据库查询、大量计算、文件 IO 等耗时业务不能直接阻塞 Handle。业务复杂后需要将这部分逻辑拆到独立的业务模块或线程池中。
@@ -578,5 +576,3 @@ generate_proto.bat "C:\path\to\Generated"
 * 房间和游戏状态同步
 * 断线重连
 * AOI
-
-KCP、WebSocket、TLS 和分布式部署暂时不作为当前版本的主要目标。
